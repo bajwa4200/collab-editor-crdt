@@ -1,0 +1,19 @@
+{
+  "name": "collab-editor-crdt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collaborative text editor with LWW CRDT over WebSockets",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "test": "npm run test -w server",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build -w client"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
